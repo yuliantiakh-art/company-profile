@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --primary: #1f6feb;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #dbe3ef;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #eef4ff, #f9fbff);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .profile-card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 12px 30px rgba(31, 41, 55, 0.08);
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+
+    .role {
+      margin: 0 0 16px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .bio {
+      margin: 0 0 24px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+
+    .info-list li {
+      padding: 12px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .label {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .value {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="avatar">AR</div>
+    <h1>Andi Ramadhan</h1>
+    <p class="role">Web Developer</p>
+    <p class="bio">
+      Halo, saya Andi. Saya suka membuat website sederhana, bersih, dan mudah digunakan.
+      Saat ini saya sedang belajar HTML, CSS, dan JavaScript.
+    </p>
+
+    <ul class="info-list">
+      <li>
+        <span class="label">Email</span>
+        <span class="value">andi@email.com</span>
+      </li>
+      <li>
+        <span class="label">Telepon</span>
+        <span class="value">0812-3456-7890</span>
+      </li>
+      <li>
+        <span class="label">Lokasi</span>
+        <span class="value">Jakarta, Indonesia</span>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
